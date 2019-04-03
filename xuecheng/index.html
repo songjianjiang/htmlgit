@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学成在线</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+        a {
+            color: #68696a;
+            text-decoration: none;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .header {
+            width: 100%;
+            height: 100px;
+            /* background-color: skyblue; */
+            padding-top: 1px;
+        }
+
+        body {
+            background-color: #f3f5f7;
+        }
+
+        input {
+            border: 0;
+        }
+
+        .nav {
+            width: 1000px;
+            height: 48px;
+            margin: 26px auto;
+
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .nav-list {
+            height: 48px;
+            float: left;
+            margin-left: 26px;
+        }
+
+        .nav-list li {
+            float: left;
+            height: 48px;
+            line-height: 48px;
+        }
+
+        .nav-list a {
+            padding: 0 10px;
+
+        }
+
+        .nav-list a:hover {
+            border-bottom: 2px solid skyblue;
+        }
+
+        .input {
+            width: 300px;
+            height: 46px;
+            border: 1px solid skyblue;
+            float: right;
+            margin-right: 8px;
+
+        }
+
+        .input [type=text] {
+            width: 230px;
+            height: 46px;
+            padding-left: 10px;
+            float: left;
+            outline: none;
+        }
+
+        .input [type=submit] {
+            height: 46px;
+            width: 60px;
+            background-image: url('image/images/search_03.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #00a4ff;
+            outline: none;
+            float: left;
+        }
+
+        .person {
+            margin-top: 8px;
+            float: right;
+        }
+
+        .person img {
+            vertical-align: middle;
+        }
+
+        .person a {
+            margin: 0 8px;
+        }
+
+        /* 第二部分 */
+        .banner {
+            width: 100%;
+            height: 415px;
+            background-color: #1c036c;
+        }
+
+        .banner-content {
+            width: 1000px;
+            height: 415px;
+            margin: 0 auto;
+            background: url("image/images/banner_11.png") 0 0 no-repeat;
+
+
+        }
+
+        .list {
+            width: 190px;
+            height: 415px;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 1px;
+            padding-right: 20px;
+            float: left;
+        }
+
+        .list li {
+            height: 36px;
+            line-height: 36px;
+            margin-left: 20px;
+            margin-top: 10px;
+
+
+        }
+
+        .list a {
+            color: #f3f5f7;
+            font-size: 14px;
+        }
+
+        .list a:hover {
+            color: #1c036c;
+        }
+
+        .list span {
+            float: right;
+
+        }
+
+        .table {
+            width: 240px;
+            height: 340px;
+            float: right;
+            margin-top: 30px;
+            background-color: rgba(165, 159, 159, 0.5);
+
+        }
+
+        .table dt {
+            width: 240px;
+            height: 58px;
+            line-height: 58px;
+            background-color: skyblue;
+            text-align: center;
+            border-bottom: 1px solid #d8401a;
+        }
+
+        .table dd {
+            width: 200px;
+            height: 58px;
+
+            text-align: center;
+
+            border-bottom: 1px solid wheat;
+            margin: 8px auto;
+
+
+        }
+
+        .table dd:last-child {
+            border: 2px solid skyblue;
+        }
+
+        .table dd:last-child a {
+            color: aliceblue;
+            line-height: 58px;
+        }
+
+        .table dd:last-child a:hover {
+            color: #1c036c;
+        }
+
+        .table dd p {
+            font-size: 14px;
+        }
+
+        /* 第三部分 */
+        .jptj {
+            width: 1000px;
+            height: 60px;
+            line-height: 60px;
+            box-shadow: 0 2px 2px gray;
+            margin: 10px auto;
+        }
+
+        .jptj a {
+            padding: 0 20px;
+            border-right: 1px solid gray;
+        }
+
+        .jptj a:first-child {
+            color: #00a4ff;
+            font-weight: 700;
+        }
+
+        .jptj a:last-child {
+            float: right;
+            color: blue;
+            border: 0;
+        }
+
+        .jptj a:hover {
+            color: #1c036c;
+        }
+
+        /* 第三部分 */
+        .content {
+
+            width: 1000px;
+            margin: 35px auto;
+        }
+
+        .content-hd {
+            height: 40px;
+        }
+
+        .content-hd h4 {
+            font-weight: normal;
+            color: #999;
+            float: left;
+        }
+
+        .content-hd p {
+            color: #999;
+            float: right;
+        }
+
+        .content-bd li {
+            width: 225px;
+            height: 300px;
+            background-color: rgba(221, 216, 216,0.4);
+            float: left;
+            margin-right: 33px;
+            box-shadow: 0px 2px 5px gray;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .content-bd li #hot {
+            position: absolute;
+           left: -5px;
+            top: 0;
+        }
+        .content-bd li:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        .content-bd li h4,
+        .content-bd li p {
+            padding: 0 16px;
+        }
+
+        .content-bd li h4 {
+            height: 60px;
+            margin-top: 10px;
+        }
+        .footer {
+            height: 250px;
+            width: 1000px;
+            margin: 20px auto;
+         border: 1px solid rgb(118, 201, 221);
+        }
+        .footer-l {
+            width: 322px;
+            float: left;
+            margin-left: 6px;
+    
+        }
+        .footer-l p {
+            margin: 20px 0;
+        }
+        .footer-l a {
+            display: block;
+            width: 100px;
+            height: 35px;
+            border: 2px solid skyblue;
+            text-align: center;
+            line-height: 35px;
+        }
+        .footer-r dl {
+            width: 200px;
+            float: left;
+        }
+        .footer-r {
+            
+           /* background-color: red; */
+           float: right;
+           margin: 60px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="image/images/logo_03.png" alt="logo" value="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">课程</a></li>
+                    <li><a href="">职业规划</a></li>
+                </ul>
+            </div>
+            <div class="person">
+                <a href="#">个人中心&nbsp&nbsp&nbsp&nbsp<img src="image/images/person_03.png" alt=""></a>
+                <a href="http://www.baidu.com" target="_blank"><img src="image/images/person-one_03.png"
+                        alt="">&nbsp&nbsp&nbsp&nbsp宋健江</a>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="输入关键字">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-content">
+            <ul class="list">
+                <li><a href="#">web前端开发<span>&lt;</span></a></li>
+                <li><a href="#">前端开发<span>&lt;</span></a></li>
+                <li><a href="#">android开发<span>&lt;</span></a></li>
+                <li><a href="#">ios开发<span>&lt;</span></a></li>
+                <li><a href="#">php开发<span>&lt;</span></a></li>
+                <li><a href="#">c语言<span>&lt;</span></a></li>
+                <li><a href="#">数据库<span>&lt;</span></a></li>
+                <li><a href="#">c++开发<span>&lt;</span></a></li>
+                <li><a href="#">Java开发<span>&lt;</span></a></li>
+            </ul>
+            <div class="table">
+                <dl>
+                    <dt>
+                        <h4>全部课程</h4>
+                    </dt>
+                    <dd>
+                        <h4>继续学习程序语言设计1</h4>
+                        <p>正在学习程序语言对象</p>
+                    </dd>
+                    <dd>
+                        <h4>继续学习程序语言设计2</h4>
+                        <p>正在学习程序语言对象</p>
+                    </dd>
+                    <dd>
+                        <h4>继续学习程序语言设计3</h4>
+                        <p>正在学习程序语言对象</p>
+                    </dd>
+                    <dd><a href="#"><strong>全部课程</strong></a></dd>
+                </dl>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="jptj">
+
+        <a href="#">精品推荐</a>
+        <a href="#">javascript</a>
+        <a href="#">php</a>
+        <a href="#">css</a>
+        <a href="#">html</a>
+        <a href="#">java</a>
+        <a href="#">金瓶梅</a>
+        <a href="#">修改兴趣</a>
+
+    </div>
+    <div class="content clearfix">
+        <div class="content-hd clearfix">
+            <h4>精品推荐</h4>
+            <p>全部课程</p>
+        </div>
+        <div class="content-bd">
+            <ul>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <img id="hot" src="image/images/hott_03.png" alt="">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+                <li>
+                    <img src="image/images/content_03.png" alt="png">
+                    <h4>Think PHP 5.0 博客系统实战项目演练</h4>
+                    <p><span>高级</span>•1125人在学习</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-l clearfix">
+            <img src="image/images/logo_03.png" alt="logo" value="logo">
+            <p>学成在线致力于普及中国最好的教育它与中国>一流大学和机构合作提供在线课程。
+                    © 2017年XTCG Inc.保留所有权利。-沪ICP备1502号</p>
+            <a href="#">下载APP</a>
+        </div>
+        <div class="footer-r clearfix">
+            <dl>
+                <dt>关于学成网</dt>
+                <dd>管理团队</dd>
+                <dd>关于服务</dd>
+                <dd>联系方式</dd>
+            </dl>
+            <dl>
+                    <dt>关于学成网</dt>
+                    <dd>管理团队</dd>
+                    <dd>关于服务</dd>
+                    <dd>联系方式</dd>
+                </dl>
+                <dl>
+                        <dt>关于学成网</dt>
+                        <dd>管理团队</dd>
+                        <dd>关于服务</dd>
+                        <dd>联系方式</dd>
+                    </dl>
+        </div>
+    </div>
+</body>
+
+</html>
