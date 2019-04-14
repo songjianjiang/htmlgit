@@ -1,0 +1,142 @@
+.content {
+    height: 480px;
+    margin-top: 10px;
+   
+}
+.contentLeft {
+    width: 190px;
+    float: left;
+    height: 460px;
+    color: #999;
+    font-size: 12px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+.contentLeft li {
+    padding-left: 32px;
+    height: 26px;
+}
+.contentLeft a {
+    color:#999;
+    font-size: 12px;
+}
+.contentLeft a:hover {
+    color: #f10105;
+}
+
+.contentCenter {
+    width: 792px;
+    float: left;
+    height: 480px;
+    
+    margin-left: 6px;
+    position: relative;
+}
+.contentCenter .bigcontent {
+    float: left;
+
+}
+.contentCenter .bigcontent ul {
+    width: 232px;
+    height: 33px;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 12px;
+    left: 22%;
+    border-radius: 10px;
+}
+.contentCenter .bigcontent li {
+    width:14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 10px 12px 0;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+}
+
+.contentCenter .bigcontent img {
+    position: absolute;
+    bottom: 0;
+}
+.contentCenter .imgright {
+    float: right;
+}
+.contentCenter .imgright img {
+    margin-top: 8px;
+   
+}
+.contentRight {
+    width: 190px;
+    float: right;
+    height: 480px;
+  
+}
+.contentRight .right-t {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 14px;
+
+}
+.contentRight .wel {
+    margin-top: 12px;
+}
+.contentRight .xinren {
+    margin-top: 26px;
+}
+.contentRight .xinren a {
+    display: inline-block;
+    width: 72px;
+    line-height: 25px;
+    border-radius: 6px;
+    color: firebrick;
+    background-color: #fff;
+    font-size: 16px;
+}
+.contentRight .xinren a:hover {
+    color: #fff;
+    background-color: firebrick;
+}
+.contentRight .right-c {
+    height: 130px;
+    border-bottom: 1px solid #ccc;
+}
+.contentRight .news {
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.right-c .news a {
+    float: right;
+}
+.right-c .news strong {
+    float: left;
+}
+.right-c .news-list span {
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 6px;
+}
+.right-c .news-list a {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.right-b {
+    width: 190px;
+    overflow: hidden;
+}
+.right-b ul {
+    width: 195px;
+    
+}
+.right-b li {
+    float: left;
+    width: 47px;
+    height: 74px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid  #ccc;
+}

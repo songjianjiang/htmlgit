@@ -1,0 +1,349 @@
+/* 公共类 */
+body {
+    background-color: #f0f3ef;
+}
+.layout {
+    width: 1186px;
+    margin: 0 auto;
+}
+a {
+    color: #999;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover {
+    color: #f10215;
+}
+ul {
+    list-style: none;
+}
+.f10 {
+    color: #f10215!important;
+}
+input, button, h5, p, dd, dt, dl, ul{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot') format('embedded-opentype'),
+        url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg') format('svg');
+  }
+  .iconfont{
+    font-family:"iconfont" !important;
+    font-size:12px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+    /* 清除浮动 */
+    .clearfix:after {
+        content: ",";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    .clearfix {
+        clear: both;
+    }
+    .clearfix {
+        *zoom: 1;
+    }
+/* header--开始 */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ee2b57; 
+    position: relative;
+}
+header .button1 {
+    width: 50px;
+    height: 27px;
+    color: black;
+    background-color: red;
+    position: absolute;
+    right: 82px;
+    top: 0;
+}
+header #event {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: url(../images/header_02.png) no-repeat;
+}
+/* header--结束 */
+/* nav--开始 */
+nav {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav .fl {
+    float: left;
+    margin-left: 206px;
+}
+nav .fr {
+    float: right;
+    margin-right: 10px;
+    position: relative;
+}
+.fr li {
+    float: left;
+
+}
+.seg {
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 10px 12px auto;
+}
+.fr img {
+    position: absolute;
+    right: -10px;
+    top:34px;
+    padding: 2px;
+    border: 1px solid #999;
+}
+/* nav--结束 */
+/* bignav部分 */
+.bignav {
+    height: 150px;
+    position: relative;
+}
+.bignav .logo {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.3);
+}
+.bignav .input {
+    width: 552px;
+    height: 38px;
+    
+    position: absolute;
+    left: 300px;
+    top: 24px;
+}
+.input input {
+    width: 496px;
+    height: 38px;
+    border: 1px solid #999;
+    border-right: 0;
+    float: left;
+    outline: 0;
+    padding-left: 3px;
+}
+.input button {
+    width: 52px;
+    height: 40px;
+    border: 0;
+    float: left;
+    background-color: #f10215;
+    outline: 0;
+}
+.input .iconfont {
+    font-size: 18px;
+    color: white;
+}
+.shopcar {
+    width: 188px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #999;
+    position: absolute;
+    top: 24px;
+    right: 88px;
+    text-align: center;
+}
+.shopcar span {
+    position: absolute;
+    right: 26px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-color: #f10215;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+}
+.shopcar .iconfont {
+    font-size: 20px;
+    
+}
+.goods {
+    position: absolute;
+    left: 300px;
+    top: 68px;
+}
+.goods a {
+    font-size: 12px;
+    margin-right: 16px;
+}
+/* nav下的底部 */
+.navBottom {
+    position: absolute;
+    left: 224px;
+    bottom: 0;
+}
+.navBottom li {
+    float: left;
+    margin-right: 15px;
+}
+.navBottom  a {
+    font-size: 14px;
+    color: rgb(19, 18, 18);
+    
+    
+}
+.navBottom a:hover {
+    color: #f10215;
+}
+.navBottom li.seg {
+    margin-top: 6px;
+    margin-left: 0;
+}
+.navright {
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.navright a {
+    font-weight: 700;
+    font-size: 22px;
+    
+    
+}
+/* footer部分 */
+footer {
+    height: 540px;
+    background-color: #f0f3ef;
+    padding-top: 20px;
+    margin-top: 30px;
+} 
+footer ul {
+    width: 100%;
+    height: 72px;
+    text-align: center;
+    border-bottom: 1px solid #999;
+    padding-left: 100px;
+} 
+footer li {
+    width: 25%;
+    height: 72px;
+    float: left;
+}
+footer li h5 {
+    width: 36px;
+    height: 41px;
+    background: url(../images/sprite.footer.png) no-repeat 0 -193px;
+    float: left;
+    margin-right: 6px;
+    /* 1202716705466   */
+}
+footer li p {
+    float: left;
+    margin-top: 10px;
+}
+footer li:nth-child(2) h5 {
+    width: 36px;
+    height: 41px;
+    background: url(../images/sprite.footer.png) no-repeat -41px -193px;
+}
+.twoFooter {
+    height: 200px;
+    padding-top: 22px;
+    border-bottom: 1px solid #999;
+}
+.flFooter dl {
+    float: left;
+    width: 198px;
+
+}
+.flFooter dl:last-child {
+    width: auto;
+}
+.flFooter dt {
+    height: 28px;
+    margin: 0;
+    padding: 0;
+}
+.flFooter dd {
+    height: 20px;
+   
+}
+.flFooter dd a {
+    font-size: 12px;
+}
+.frFooter {
+    width: 205px;
+    height: 155px;
+    float: right;
+    background: url(../images/sprite.footer.png) no-repeat;
+}
+.frFooter h5 {
+    height: 36px;
+    text-align: center;
+}
+.frFooter p {
+    font-size: 12px;
+    color: #999;
+    height: 18px;
+}
+.frFooter a {
+    float: right;
+    font-size: 12px;
+}
+.threeFooter {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.threeFooter span {
+    padding: 0 5px;
+}
+.threeFooter h5 {
+    height: 30px;
+    color: rgb(112, 107, 107);
+}
+.threeFooter p {
+    height: 20px;
+    color: #999;
+}
+.four {
+    margin-top: 40px;
+    text-align: center;
+}
+.four div {
+    width: 102px;
+    height: 32px;
+    display: inline-block;
+}
+.four div:first-child  {
+    background: url(../images/sprite.footer.png) no-repeat -206px 0;
+}
+.four div:nth-child(2) {
+    background: url(../images/sprite.footer.png) no-repeat -206px -37px;
+}
+.four div:nth-child(3) {
+    background: url(../images/sprite.footer.png) no-repeat -206px -74px;
+}
+.four div:last-child {
+    background: url(../images/sprite.footer.png) no-repeat -206px -111px;
+}
